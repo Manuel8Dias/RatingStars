@@ -11,9 +11,9 @@ class StarRater extends HTMLElement {
         shadow.appendChild(this.styles())
 
         const rater = this.createRater()
-        const star = this.createStars()
+        this.stars = this.createStars()
 
-        star.forEach(star => rater.appendChild(star))
+        this.stars.forEach(star => rater.appendChild(star))
 
         shadow.appendChild(rater)
 
