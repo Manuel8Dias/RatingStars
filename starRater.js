@@ -62,7 +62,7 @@ class StarRater extends HTMLElement {
 
     hightLightRating(e) {
         this.stars.forEach(star => {
-            star.style.color = this.currentRatingValue >= star.getAttribute('data-value') ? 'lightseagreen' : 'gray'
+            star.style.color = this.currentRatingValue >= star.getAttribute('data-value') ? 'lightSeaGreen' : 'lightGray'
         })
     }
 
